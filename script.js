@@ -260,7 +260,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl92
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		tileSize: 512,
 		zoomOffset: -1
-	}).addTo(mymap);
+	}).addTo(map);
 	
 	
 	
