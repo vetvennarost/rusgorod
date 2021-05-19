@@ -223,10 +223,6 @@ var addHomeButton = function() {
 
 }
 
-	// Defining borders of the map
-var corner1 = L.latLng(41, 0),
-corner2 = L.latLng(68, 70),
-bounds = L.latLngBounds(corner1, corner2);
 
 
 /*
