@@ -253,19 +253,7 @@ L.control.zoom({ position: 'bottomright' })
 L.control.zoomLabel()
 .addTo(map);
 	
-//mapbox://styles/vetvennarost/ckow0vlt9050d17mj5q0c9ym7	
-L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckow0vlt9050d17mj5q0c9ym7/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
-	minZoom: 5,	
-	maxZoom: 10,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		tileSize: 512,
-		zoomOffset: -1
-	}).addTo(map);
-	
-	
-	
-	
+
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
 let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
@@ -317,6 +305,18 @@ L.tileLayer.colorFilter(
 	}
 )
 .addTo(map);
+	
+
+//mapbox://styles/vetvennarost/ckow0vlt9050d17mj5q0c9ym7	
+L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckow0vlt9050d17mj5q0c9ym7/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
+	minZoom: 5,	
+	maxZoom: 10,
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	tileSize: 512,
+	zoomOffset: -1
+	}
+).addTo(map);	
 	
 	
 
