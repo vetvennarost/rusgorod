@@ -320,12 +320,10 @@ L.tileLayer.colorFilter(
 var map = L.map('map');
  
 L.tileLayer(
-'https://api.mapbox.com/styles/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}?access_token={accessToken}', 
+'https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}?access_token={accessToken}', 
 {
 attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
 tileSize: 512,
-maxZoom: 18,
-zoomOffset: -1,
 accessToken: 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw'
 }).addTo(map);
 	
