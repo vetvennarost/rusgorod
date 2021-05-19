@@ -250,18 +250,6 @@ bounds = L.latLngBounds(corner1, corner2);
 	
 
 L.mapbox.accessToken = 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw';
-map = L.map('map').setView([55, 37], 6);
-
-// Add tiles from the Mapbox Static Tiles API
-// (https://docs.mapbox.com/api/maps/#static-tiles)
-// Tiles are 512x512 pixels and are offset by 1 zoom level
-L.tileLayer(
-    'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
-        tileSize: 512,
-        zoomOffset: -1,
-        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-	
 	
 	
 	
@@ -280,6 +268,19 @@ L.control.zoom({ position: 'bottomright' })
 	// Adding zoom level in bottom-left corner of the map
 L.control.zoomLabel()
 .addTo(map);
+
+	
+
+// Add tiles from the Mapbox Static Tiles API
+// (https://docs.mapbox.com/api/maps/#static-tiles)
+// Tiles are 512x512 pixels and are offset by 1 zoom level
+L.tileLayer(
+    'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    })
+.addTo(map);	
 	
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
