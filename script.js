@@ -141,30 +141,23 @@ var addMarkers = function(data) {
     // Add an empty group if doesn't yet exist
     if (!groups[d.Group]) { groups[d.Group] = []; }
 
-	// Create a new place marker
+    // Create a new place marker
     var m = L.marker(
       [d.Latitude, d.Longitude],
       {
         icon: L.icon({
-        iconUrl: d.Icon,
-	//iconSize: [ iconWidth, iconHeight ],
-        iconAnchor: [ iconWidth*2, iconHeight*2 ], // middle of icon represents point center
-        className: 'br1',
+          iconUrl: d.Icon,
+          // iconSize: [ iconWidth, iconHeight ],
+          iconAnchor: [ iconWidth/2, iconHeight/2 ], // middle of icon represents point center
+          className: 'br1',
         }),
         // Pass place data
         placeInfo: d
       },
     ).on('click', function(e) {
-   	map.flyTo(this._latlng, this._zoom);
-	updateSidebar(this);
-    })
-    
-    .bindTooltip(d.Name, 
-	{permanent: true,
-	direction: 'right'});
-	  
-	  
-		  
+      map.flyTo(this._latlng, this._zoom);
+      updateSidebar(this);
+    });
 
     // Add this new place marker to an appropriate group
     groups[d.Group].push(m);
@@ -248,8 +241,6 @@ var corner1 = L.latLng(41, 0),
 corner2 = L.latLng(68, 70),
 bounds = L.latLngBounds(corner1, corner2);	
 	
-
-
 	
 map = L.map('map', {
     tap: false, // to avoid issues in Safari, disable tap
@@ -265,9 +256,6 @@ L.control.zoom({ position: 'bottomright' })
 	// Adding zoom level in bottom-left corner of the map
 L.control.zoomLabel()
 .addTo(map);
-
-	
-
 	
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
@@ -320,18 +308,7 @@ L.tileLayer.colorFilter(
 	}
 )
 .addTo(map);
-
-
-
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
-tileSize: 512,
-maxZoom: 18,
-zoomOffset: -1,
-id: 'mapbox/streets-v11',
-accessToken: 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw'
-})
-.addTo(map);	
+	
 	
 
   loadData(dataLocation);
@@ -346,9 +323,6 @@ accessToken: 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXl
 
   $('#closeButton').on('click', resetView);
 }
-
-	
-
 
 // When DOM is loaded, initialize the map
 $('document').ready(initMap);
