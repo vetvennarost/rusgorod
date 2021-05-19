@@ -141,17 +141,15 @@ var addMarkers = function(data) {
     // Add an empty group if doesn't yet exist
     if (!groups[d.Group]) { groups[d.Group] = []; }
 
-    var diam = map.getZoom();
-	  
 	// Create a new place marker
     var m = L.marker(
       [d.Latitude, d.Longitude],
       {
         icon: L.icon({
-          iconUrl: d.Icon,
-          iconSize: [ diam, diam ],
-          iconAnchor: [ iconWidth/2, iconHeight/2 ], // middle of icon represents point center
-          className: 'br1',
+        iconUrl: d.Icon,
+	iconSize: [ iconWidth, iconHeight ],
+        iconAnchor: [ iconWidth/2, iconHeight/2 ], // middle of icon represents point center
+        className: 'br1',
         }),
         // Pass place data
         placeInfo: d
