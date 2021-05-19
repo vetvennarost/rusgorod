@@ -148,7 +148,7 @@ var addMarkers = function(data) {
         icon: L.icon({
         iconUrl: d.Icon,
 	//iconSize: [ iconWidth, iconHeight ],
-        iconAnchor: [ iconWidth/2, iconHeight/2 ], // middle of icon represents point center
+        iconAnchor: [ iconWidth*2, iconHeight*2 ], // middle of icon represents point center
         className: 'br1',
         }),
         // Pass place data
