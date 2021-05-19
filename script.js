@@ -253,8 +253,8 @@ L.control.zoom({ position: 'bottomright' })
 L.control.zoomLabel()
 .addTo(map);
 	
-	
-L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
+//mapbox://styles/vetvennarost/ckow0vlt9050d17mj5q0c9ym7	
+L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckow0vlt9050d17mj5q0c9ym7/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
 	minZoom: 5,	
 	maxZoom: 10,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
