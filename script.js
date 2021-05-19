@@ -249,10 +249,7 @@ corner2 = L.latLng(68, 70),
 bounds = L.latLngBounds(corner1, corner2);	
 	
 
-L.mapbox.accessToken = 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw';
-	
-	
-	
+
 	
 map = L.map('map', {
     tap: false, // to avoid issues in Safari, disable tap
@@ -271,16 +268,6 @@ L.control.zoomLabel()
 
 	
 
-// Add tiles from the Mapbox Static Tiles API
-// (https://docs.mapbox.com/api/maps/#static-tiles)
-// Tiles are 512x512 pixels and are offset by 1 zoom level
-L.tileLayer(
-    'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
-        tileSize: 512,
-        zoomOffset: -1,
-        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    })
-.addTo(map);	
 	
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
@@ -335,6 +322,16 @@ L.tileLayer.colorFilter(
 .addTo(map);
 
 
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+tileSize: 512,
+maxZoom: 18,
+zoomOffset: -1,
+id: 'mapbox/streets-v11',
+accessToken: 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw'
+})
+.addTo(map);	
 	
 
   loadData(dataLocation);
