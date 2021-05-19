@@ -159,7 +159,7 @@ var addMarkers = function(data) {
 	updateSidebar(this);
     })
     
-    .bindTooltip("<span style='font-size: 40px'>d.Name</span>", 
+    .bindTooltip(d.Name, 
 	{
 	permanent: true,
 	direction: right
