@@ -226,6 +226,11 @@ var addHomeButton = function() {
 /*
  * Main function to initialize the map, add baselayer, and add markers
  */
+<!-- Defining borders of the map -->
+var corner1 = L.latLng(41, 0),
+corner2 = L.latLng(68, 70),
+bounds = L.latLngBounds(corner1, corner2);
+
 var initMap = function() {
 
   map = L.map('map', {
@@ -233,17 +238,69 @@ var initMap = function() {
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
     zoomControl: false,
-  });
+  })
+  .setMaxBounds(bounds);
 
   // Add zoom control to the bottom-right corner
   L.control.zoom({ position: 'bottomright' }).addTo(map);
+  
+  <!-- Adding navigation bar just beneath + and - -->
+L.control.navbar({ position: 'bottomright' })
+.addTo(map);
+  
+  
 
+<!-- Colorizing layers -->
+let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
+let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
+let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19
-  }).addTo(map);
+<!-- Applying Ocean layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+L.tileLayer.colorFilter(
+'https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}.png', 
+	{
+	minZoom: 5,
+	maxZoom: 10,
+	opacity: 0.7,
+	attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>, Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri, &copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+	filter: fOcean
+	}
+)
+.addTo(map);
+
+<!-- Applying Physical layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+L.tileLayer.colorFilter(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}.png', 
+	{
+        minZoom: 5,
+	maxZoom: 6.9,
+	opacity: 0.4,
+	filter: fPhysical
+	}
+)
+.addTo(map);
+
+<!-- Applying Relief layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+L.tileLayer.colorFilter(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png', 
+	{
+	minZoom: 7,
+	maxZoom: 9.9,
+	opacity: 0.5,
+	filter: fRelief
+	}
+)
+.addTo(map);
+
+L.tileLayer.colorFilter(
+'https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', 
+	{
+    minZoom: 10,
+	maxZoom: 10,
+	opacity: 0.5
+	}
+)
+.addTo(map);
 
   loadData(dataLocation);
 
