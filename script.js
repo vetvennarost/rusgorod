@@ -14,7 +14,10 @@ var slugify = function(str) {
  * Resets map view to originally defined `mapCenter` and `mapZoom` in settings.js
  */
 var resetView = function() {
-  map.flyTo( mapCenter, mapZoom );
+  map.flyTo( {
+center: [55, 37],
+mapZoom
+} );
   resetSidebar();
 }
 
