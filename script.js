@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 11);
+      map.flyTo(this._latlng, this._zoom);
       updateSidebar(this);
     });
 
@@ -257,11 +257,6 @@ L.control.zoom({ position: 'bottomright' })
 L.control.zoomLabel()
 .addTo(map);
 	
-	// Adding navigation bar
-L.control.navbar({ position: 'bottomright' })
-.addTo(map);
-
-
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
 let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
