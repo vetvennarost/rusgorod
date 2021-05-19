@@ -253,6 +253,18 @@ L.control.zoom({ position: 'bottomright' })
 L.control.zoomLabel()
 .addTo(map);
 	
+	
+L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+	
+	
+	
+	
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
 let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
