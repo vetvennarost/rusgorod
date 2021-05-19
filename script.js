@@ -160,11 +160,7 @@ var addMarkers = function(data) {
     })
     
     .bindTooltip(d.Name, 
-	{
-	permanent: true,
-	direction: 'right'
-    	}
-	);
+	{permanent: true});
 	  
 	  
 		  
