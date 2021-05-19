@@ -159,12 +159,10 @@ var addMarkers = function(data) {
 	updateSidebar(this);
     })
     
-    .bindTooltip(d.Name, 
+    .bindTooltip("<span style='font-size: 40px'>d.Name</span>", 
 	{
 	permanent: true,
-	offset: Point(3, 3),
-	direction: right,
-    	opacity: 0.5
+	direction: right
     	}
 	);
 	  
