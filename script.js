@@ -157,10 +157,10 @@ var addMarkers = function(data) {
     ).on('click', function(e) {
    	map.flyTo(this._latlng, this._zoom);
 	updateSidebar(this);
-    }).bindPopup(d.Name);
+    }).bindTooltip(d.Name, {
+    permanent: true});
 	  
 	  
-  
 		  
 
     // Add this new place marker to an appropriate group
