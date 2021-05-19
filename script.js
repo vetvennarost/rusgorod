@@ -223,16 +223,19 @@ var addHomeButton = function() {
 
 }
 
+	// Defining borders of the map
+var corner1 = L.latLng(41, 0),
+corner2 = L.latLng(68, 70),
+bounds = L.latLngBounds(corner1, corner2);
+
+
 /*
  * Main function to initialize the map, add baselayer, and add markers
  */
 
 var initMap = function() {
 
-		// Defining borders of the map
-var corner1 = L.latLng(41, 0),
-corner2 = L.latLng(68, 70),
-bounds = L.latLngBounds(corner1, corner2);
+
 	
 	
 	
