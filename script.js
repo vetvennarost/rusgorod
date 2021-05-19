@@ -162,9 +162,7 @@ var addMarkers = function(data) {
     .bindTooltip(d.Name, 
 	{
 	permanent: true,
-	offset (3, 3),
-	direction: right,
-	opacity: 0
+
 	}
 	);
 	  
