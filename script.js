@@ -316,7 +316,16 @@ L.tileLayer.colorFilter(
 )
 .addTo(map);
 
- 
+L.mapbox.accessToken = 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw';
+
+	
+L.tileLayer(
+    'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+	
 L.tileLayer(
 'https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}.png?access_token={accessToken}', 
 {
