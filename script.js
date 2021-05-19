@@ -240,9 +240,6 @@ var initMap = function() {
 L.control.zoom({ position: 'bottomright' })
 .addTo(map);
   
-	// Adding navigation bar
-L.control.navbar({ position: 'bottomright' })
-.addTo(map);
 
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
