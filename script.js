@@ -255,7 +255,8 @@ L.control.zoomLabel()
 	
 	
 L.tileLayer('https://api.mapbox.com/styles/v1/vetvennarost/ckovpj8mz1y3a17o7bl923x3r/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw', {
-		maxZoom: 10,
+	minZoom: 5,	
+	maxZoom: 10,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		tileSize: 512,
