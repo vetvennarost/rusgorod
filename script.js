@@ -226,10 +226,6 @@ var addHomeButton = function() {
 /*
  * Main function to initialize the map, add baselayer, and add markers
  */
-<!-- Defining borders of the map -->
-var corner1 = L.latLng(41, 0),
-corner2 = L.latLng(68, 70),
-bounds = L.latLngBounds(corner1, corner2);
 
 var initMap = function() {
 
@@ -238,24 +234,22 @@ var initMap = function() {
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
     zoomControl: false,
-  })
-  .setMaxBounds(bounds);
+  });
 
-  // Add zoom control to the bottom-right corner
-  L.control.zoom({ position: 'bottomright' }).addTo(map);
-  
-  <!-- Adding navigation bar just beneath + and - -->
-L.control.navbar({ position: 'bottomright' })
+	// Add zoom control to the bottom-right corner
+L.control.zoom({ position: 'bottomright' })
 .addTo(map);
   
-  
+	// Adding navigation bar
+L.control.navbar({ position: 'bottomright' })
+.addTo(map);
 
-<!-- Colorizing layers -->
+	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
 let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
 let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
-<!-- Applying Ocean layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+	// Applying Ocean layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
 L.tileLayer.colorFilter(
 'https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}.png', 
 	{
@@ -268,7 +262,7 @@ L.tileLayer.colorFilter(
 )
 .addTo(map);
 
-<!-- Applying Physical layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+	// Applying Physical layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
 L.tileLayer.colorFilter(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}.png', 
 	{
@@ -280,7 +274,7 @@ L.tileLayer.colorFilter(
 )
 .addTo(map);
 
-<!-- Applying Relief layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter -->
+	// Applying Relief layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
 L.tileLayer.colorFilter(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png', 
 	{
