@@ -312,9 +312,7 @@ L.tileLayer.colorFilter(
   loadData(dataLocation);
 
   // Add data & GitHub links
-  map.attributionControl.setPrefix('Download <a href="'
-    + dataLocation + '" target="_blank">data</a> or \
-    view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
+  map.attributionControl.setPrefix('View <a href="https://github.com/vetvennarost/rusgorod" target="_blank">code on\
     GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library\
     for interactive maps">Leaflet</a>');
 
