@@ -253,7 +253,9 @@ map = L.map('map', {
 L.control.zoom({ position: 'bottomright' })
 .addTo(map);
 	
-
+	// Adding zoom level in bottom-left corner of the map
+L.control.zoomLabel()
+.addTo(map);
 
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
