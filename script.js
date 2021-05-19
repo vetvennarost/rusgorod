@@ -156,7 +156,7 @@ var addMarkers = function(data) {
       },
     ).on('click', function(e) {
    	map.flyTo(this._latlng, this._zoom);
-	.bindPopup(d.Title);
+	.bindPopup(d.Name);
    	updateSidebar(this);
     });
 	  
