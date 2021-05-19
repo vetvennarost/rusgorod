@@ -229,17 +229,28 @@ var addHomeButton = function() {
 
 var initMap = function() {
 
+		// Defining borders of the map
+var corner1 = L.latLng(41, 0),
+corner2 = L.latLng(68, 70),
+bounds = L.latLngBounds(corner1, corner2);
+	
+	
+	
   map = L.map('map', {
     center: mapCenter,
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
     zoomControl: false,
-  });
+  })
+.setMaxBounds(bounds);
 
 	// Add zoom control to the bottom-right corner
 L.control.zoom({ position: 'bottomright' })
 .addTo(map);
-  
+	
+	// Adding navigation bar
+L.control.navbar()
+.addTo(map);
 
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
