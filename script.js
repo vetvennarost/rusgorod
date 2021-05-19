@@ -157,8 +157,16 @@ var addMarkers = function(data) {
     ).on('click', function(e) {
    	map.flyTo(this._latlng, this._zoom);
 	updateSidebar(this);
-    }).bindTooltip(d.Name, {
-    permanent: true});
+    })
+    
+    .bindTooltip(d.Name, 
+	{
+	permanent: true,
+	offset (3, 3),
+	direction: right,
+	opacity: 0
+	}
+	);
 	  
 	  
 		  
