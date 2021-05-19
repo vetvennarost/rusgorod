@@ -236,15 +236,17 @@ bounds = L.latLngBounds(corner1, corner2);
 var initMap = function() {
 
 
+<!-- Defining borders of the map -->
+var corner1 = L.latLng(41, 0),
+corner2 = L.latLng(68, 70),
+bounds = L.latLngBounds(corner1, corner2);	
 	
 	
-	
-  map = L.map('map', {
-    center: mapCenter,
-    zoom: mapZoom,
+map = L.map('map', {
     tap: false, // to avoid issues in Safari, disable tap
     zoomControl: false,
   })
+.setView([55, 37], 6)
 .setMaxBounds(bounds);
 
 	// Add zoom control to the bottom-right corner
