@@ -251,6 +251,10 @@ L.control.zoom({ position: 'bottomright' })
 	// Adding navigation bar
 L.control.navbar({ position: 'bottomright' })
 .addTo(map);
+	
+	// Adding zoom level in bottom-left corner of the map
+L.control.zoomLabel({ position: 'bottomleft' })
+.addTo(map);
 
 	// Colorizing layers
 let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
