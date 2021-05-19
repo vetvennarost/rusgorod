@@ -141,7 +141,7 @@ var addMarkers = function(data) {
     // Add an empty group if doesn't yet exist
     if (!groups[d.Group]) { groups[d.Group] = []; }
 
-    var diam = this._zoom
+    var diam = this._zoom;
 	  
 	// Create a new place marker
     var m = L.marker(
