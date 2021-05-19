@@ -161,9 +161,7 @@ var addMarkers = function(data) {
     
     .bindTooltip(d.Name, 
 	{
-	permanent: true,
-
-	}
+	permanent: true}
 	);
 	  
 	  
