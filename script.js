@@ -158,6 +158,20 @@ var addMarkers = function(data) {
    	map.flyTo(this._latlng, this._zoom);
    	updateSidebar(this);
     });
+	  
+	  
+	//Try with labels
+new L.Marker(
+	[d.Latitude, d.Longitude], 
+	{
+    	icon: new L.DivIcon({
+        className: 'my-div-icon',
+        html: '<img class="my-div-image" src="http://png-3.vector.me/files/images/4/0/402272/aiga_air_transportation_bg_thumb"/>'+
+              '<span class="my-div-span">RAF Banff Airfield</span>'
+    })
+});
+	  
+		  
 
     // Add this new place marker to an appropriate group
     groups[d.Group].push(m);
