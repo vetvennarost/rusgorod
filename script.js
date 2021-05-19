@@ -315,6 +315,20 @@ L.tileLayer.colorFilter(
 	}
 )
 .addTo(map);
+
+	
+	
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/vetvennarost/ckovpj8mz1y3a17o7bl923x3r', // replace this with your style URL
+      center: [55, 37],
+      zoom: 6
+    });
+    // code from the next step will go here
+
+	
 	
 	
 
