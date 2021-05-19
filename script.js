@@ -250,7 +250,7 @@ bounds = L.latLngBounds(corner1, corner2);
 	
 
 L.mapbox.accessToken = 'pk.eyJ1IjoidmV0dmVubmFyb3N0IiwiYSI6ImNrb2lwNmdwcDA0N28ybnFjdnV5cXlkdncifQ.cwDSpHsh42RUWjOL57TBDw';
-var map = L.map('map').setView([38.97416, -95.23252], 15);
+map = L.map('map').setView([55, 37], 6);
 
 // Add tiles from the Mapbox Static Tiles API
 // (https://docs.mapbox.com/api/maps/#static-tiles)
