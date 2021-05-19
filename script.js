@@ -62,9 +62,9 @@ var updateSidebar = function(marker) {
 
     // Populate place information into the sidebar
     $('#placeInfo').animate({opacity: 0.5}, 300).promise().done(function() {
-      $('#placeInfo h2').html(d.name);
-      $('#placeInfo h3').html(d.land);
-      $('#description').html(d.reestrName);
+      $('#placeInfo h2').html(d.Name);
+      $('#placeInfo h3').html(d.Subtitle);
+      $('#description').html(d.Description);
 
       if (d.GoogleMapsLink) {
         $('#googleMaps').removeClass('dn').addClass('dt').attr('href', d.GoogleMapsLink);
@@ -91,11 +91,11 @@ var updateSidebar = function(marker) {
             href: d[idx],
             'data-lightbox': 'gallery',
             'data-title': ( d[idx + 'Caption'] + ' ' + source )  || '',
-            'data-alt': d.name,
+            'data-alt': d.Name,
             'class': i === 1 ? '' : 'dn'
           });
 
-          var img = $('<img/>', { src: d[idx], alt: d.name, class: 'dim br1' });
+          var img = $('<img/>', { src: d[idx], alt: d.Name, class: 'dim br1' });
           $('#gallery').append( a.append(img) );
 
           if (i === 1) {
@@ -136,14 +136,14 @@ var addMarkers = function(data) {
     var d = data[i];
 
     // Create a slug for URL hash, and add to marker data
-    d['slug'] = slugify(d.name);
+    d['slug'] = slugify(d.Name);
 
     // Add an empty group if doesn't yet exist
-    if (!groups[d.locationPrecision]) { groups[d.locationPrecision] = []; }
+    if (!groups[d.Group]) { groups[d.Group] = []; }
 
     // Create a new place marker
     var m = L.marker(
-      [d.reprLat, d.reprLong],
+      [d.Latitude, d.Longitude],
       {
         icon: L.icon({
           iconUrl: d.Icon,
@@ -160,7 +160,7 @@ var addMarkers = function(data) {
     });
 
     // Add this new place marker to an appropriate group
-    groups[d.locationPrecision].push(m);
+    groups[d.Group].push(m);
 
     if (d.slug === hashName) { activeMarker = m; }
   }
