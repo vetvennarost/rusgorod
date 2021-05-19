@@ -249,7 +249,7 @@ L.control.zoom({ position: 'bottomright' })
 .addTo(map);
 	
 	// Adding navigation bar
-L.control.navbar()
+L.control.navbar({ position: 'bottomright' })
 .addTo(map);
 
 	// Colorizing layers
