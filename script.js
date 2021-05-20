@@ -267,7 +267,9 @@ let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
 	
 L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
-    layers: 'TOPO-WMS'
+    layers: 'TOPO-WMS',
+	minZoom: 4,
+	maxZoom: 11
 }).addTo(map);	
 	
 	
@@ -277,7 +279,8 @@ L.tileLayer.colorFilter(
 	{
 	minZoom: 5,
 	maxZoom: 10,
-	opacity: 0.7,
+		//opacity: 0.7,
+	opacity: 0.5,
 	attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>, Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri, &copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors',
 	filter: fOcean
 	}
@@ -290,6 +293,7 @@ L.tileLayer.colorFilter(
 	{
         minZoom: 5,
 	maxZoom: 6.9,
+		//opacity: 0.4,
 	opacity: 0,
 	filter: fPhysical
 	}
@@ -302,6 +306,7 @@ L.tileLayer.colorFilter(
 	{
 	minZoom: 7,
 	maxZoom: 9.9,
+		//opacity: 0.5,
 	opacity: 0,
 	filter: fRelief
 	}
@@ -313,6 +318,7 @@ L.tileLayer.colorFilter(
 	{
     minZoom: 10,
 	maxZoom: 10,
+		//opacity: 0.5
 	opacity: 0
 	}
 )
