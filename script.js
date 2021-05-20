@@ -290,7 +290,7 @@ L.tileLayer.colorFilter(
 	{
         minZoom: 5,
 	maxZoom: 6.9,
-	opacity: 0.4,
+	opacity: 0,
 	filter: fPhysical
 	}
 )
@@ -302,7 +302,7 @@ L.tileLayer.colorFilter(
 	{
 	minZoom: 7,
 	maxZoom: 9.9,
-	opacity: 0.5,
+	opacity: 0,
 	filter: fRelief
 	}
 )
@@ -313,7 +313,7 @@ L.tileLayer.colorFilter(
 	{
     minZoom: 10,
 	maxZoom: 10,
-	opacity: 0.5
+	opacity: 0
 	}
 )
 .addTo(map);
