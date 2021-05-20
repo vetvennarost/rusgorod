@@ -305,7 +305,7 @@ L.tileLayer.colorFilter(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png', 
 	{
 	minZoom: 7,
-	maxZoom: 9.9,
+	maxZoom: 8.9,
 		//opacity: 0.5,
 	opacity: 0.5,
 	filter: fRelief
@@ -316,7 +316,7 @@ L.tileLayer.colorFilter(
 L.tileLayer.colorFilter(
 'https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', 
 	{
-    minZoom: 10,
+    minZoom: 9,
 	maxZoom: 10,
 		//opacity: 0.5
 	opacity: 0.5
