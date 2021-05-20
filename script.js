@@ -265,6 +265,10 @@ let fPhysical = ['bright:76%','contrast:200%','saturate:142%'];
 let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
 let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
+	
+	
+	
+	
 	// Applying Ocean layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
 L.tileLayer.colorFilter(
 'https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}.png', 
