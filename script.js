@@ -326,6 +326,11 @@ L.tileLayer.colorFilter(
 
 	
 	
+L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+    layers: 'SRTM30-Colored-Hillshade'
+}).addTo(map);	
+	
+	
 
   loadData(dataLocation);
 
