@@ -161,7 +161,8 @@ var addMarkers = function(data) {
     
  	.bindTooltip(d.Name, 
 	{permanent: true,
-	direction: 'right'});  
+	direction: 'right',
+	offset: [2, -2]});  
 	  
 
     // Add this new place marker to an appropriate group
