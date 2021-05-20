@@ -267,7 +267,7 @@ let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
 	
 L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
-    layers: 'TOPO-OSM-WMS'
+    layers: 'TOPO-WMS'
 }).addTo(map);	
 	
 	
