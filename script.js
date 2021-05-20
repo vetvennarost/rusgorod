@@ -339,7 +339,7 @@ L.tileLayer.colorFilter(
 	
 	
 L.tileLayer.wms('https://ows.terrestris.de/osm/service?', {
-    layers: 'SRTM30-Colored-Hillshade'
+    layers: 'SRTM30-Colored-Hillshade,SRTM30-Contour'
 }).addTo(map);	
 	
 	
