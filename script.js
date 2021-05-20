@@ -266,7 +266,9 @@ let fOcean = ['bright:74%','contrast:200%','saturate:400%'];
 let fRelief = ['bright:87%','contrast:200%','saturate:100%'];
 
 	
-	
+L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+    layers: 'TOPO-OSM-WMS'
+}).addTo(map);	
 	
 	
 	// Applying Ocean layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
