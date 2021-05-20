@@ -288,35 +288,35 @@ L.tileLayer.colorFilter(
 .addTo(map);
 
 	// Applying Physical layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
-L.tileLayer.colorFilter(
-'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}.png', 
-	{
-        minZoom: 5,
-	maxZoom: 6.9,
+//L.tileLayer.colorFilter(
+//'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}.png', 
+//	{
+//        minZoom: 5,
+//	maxZoom: 6.9,
 		//opacity: 0.4,
-	opacity: 0,
-	filter: fPhysical
-	}
-)
-.addTo(map);
+//	opacity: 0,
+//	filter: fPhysical
+//	}
+//)
+//.addTo(map);
 
 	// Applying Relief layer from ArcGIS, colorized with Leaflet.TileLayer.ColorFilter
-L.tileLayer.colorFilter(
-'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png', 
-	{
-	minZoom: 7,
-	maxZoom: 7.9,
+//L.tileLayer.colorFilter(
+//'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}.png', 
+//	{
+//	minZoom: 7,
+//	maxZoom: 7.9,
 		//opacity: 0.5,
-	opacity: 0.5,
-	filter: fRelief
-	}
-)
-.addTo(map);
+//	opacity: 0.5,
+//	filter: fRelief
+//	}
+//)
+//.addTo(map);
 
 L.tileLayer.colorFilter(
 'https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', 
 	{
-    minZoom: 8,
+    minZoom: 5,
 	maxZoom: 10,
 		//opacity: 0.5
 	opacity: 0.5
