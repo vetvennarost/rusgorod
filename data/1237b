@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>1237b</name>
+    <open>1</open>
+    <description>Unleash your creativity with the help of these examples!</description>
+    <Style id="downArrowIcon">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal4/icon28.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="globeIcon">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal3/icon19.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="transPurpleLineGreenPoly">
+      <LineStyle>
+        <color>7fff00ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="thickBlackLine">
+      <LineStyle>
+        <color>87000000</color>
+        <width>10</width>
+      </LineStyle>
+    </Style>
+    <Style id="redLineBluePoly">
+      <LineStyle>
+        <color>ff0000ff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>ffff0000</color>
+      </PolyStyle>
+    </Style>
+    <Style id="blueLineRedPoly">
+      <LineStyle>
+        <color>ffff0000</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>ff0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transRedPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transGreenPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transYellowPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d00ffff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="noDrivingDirections">
+      <BalloonStyle>
+        <text><![CDATA[
+          <b>$[name]</b>
+          <br /><br />
+          $[description]
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+ 	<Placemark id="0F18B441211AD4DE87F5">
+		<name>Владимир</name>
+		<description>1108 Володимѣрь</description>
+		<styleUrl>#__managed_style_0B382145F61AD4EAB544</styleUrl>
+		<Point>
+			<coordinates>40.40709,56.12908,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="12F1AE060A1AD4DE87F5">
+		<name>Москва</name>
+		<description>1147 Московь</description>
+		<Point>
+			<coordinates>37.61747,55.75064,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="2691CDE5771AD4DE87F5">
+		<name>Галич</name>
+		<description>1237 Галичь</description>
+		<Point>
+			<coordinates>42.36009,58.38845,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0A06A852FD1AD4DE87F6">
+		<name>Тверь</name>
+		<description>1135 Тьхвѣрь</description>
+		<Point>
+			<coordinates>35.90034,56.86158,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="015F3721961AD4DE87F8">
+		<name>Нижний Новгород</name>
+		<description>1221 Новагородъ Низовския земли</description>
+		<Point>
+			<coordinates>44.00136,56.32849999999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="1B911C2BFA1AD4DE87F8">
+		<name>Городец</name>
+		<description>1171 Городець</description>
+		<Point>
+			<coordinates>43.46572,56.63998,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="2B801CC9A91AD4DE87F8">
+		<name>Гороховец</name>
+		<description>1239 Гороховець</description>
+		<Point>
+			<coordinates>42.67375,56.20425,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="34B395DBAD1AD4DE87F8">
+		<name>Суздаль</name>
+		<description>1024 Суждаль</description>
+		<styleUrl>#__managed_style_01A934F0321AD4EC8A59</styleUrl>
+		<Point>
+			<coordinates>40.44372,56.41628000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="494DDDB3791AD4DE87F8">
+		<name>Юрьев-Польский</name>
+		<description>1177 Юрьевъ</description>
+		<Point>
+			<coordinates>39.68051,56.49736,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01475D658D1AD4DE87F9">
+		<name>Кострома</name>
+		<description>1213 Кострома</description>
+		<Point>
+			<coordinates>40.91817,57.77008,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="1EB6D0EBD71AD4DE87F9">
+		<name>Дмитров</name>
+		<description>1154 Дмитровъ</description>
+		<Point>
+			<coordinates>37.52008,56.34463,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="2CE46A03221AD4DE87F9">
+		<name>Стародуб</name>
+		<description>1218 Стародубъ</description>
+		<Point>
+			<coordinates>41.50196,56.44899000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="337F3DC3061AD4DE87F9">
+		<name>Кашин</name>
+		<description>1238</description>
+		<Point>
+			<coordinates>37.61408,57.36079,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="46389AB2F61AD4DE87F9">
+		<name>Переяславль</name>
+		<description>1152 Переаславль</description>
+		<Point>
+			<coordinates>38.85171,56.73584000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="5C4DC3D4A71AD4DE87F9">
+		<name>Зубцов</name>
+		<description>1216 Зубьчевъ</description>
+		<Point>
+			<coordinates>34.58953,56.17093,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="084BE21CD91AD4DE87FA">
+		<name>Звенигород</name>
+		<description>1339 Звенигородъ</description>
+		<Point>
+			<coordinates>36.84012,55.73291,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="1CBEAC31691AD4DE87FA">
+		<name>Боголюбово</name>
+		<description>1158 Боголюбый</description>
+		<Point>
+			<coordinates>40.53686,56.19615000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="29F76EA7711AD4DE87FA">
+		<name>Юрьевец</name>
+		<description>1380 Юрьевъ Поволгский</description>
+	</Placemark>
+	<Placemark id="3CEFFC597F1AD4DE87FA">
+		<name>Нерехта</name>
+		<description>1214</description>
+	</Placemark>
+	<Placemark id="484F7BA8761AD4DE87FA">
+		<name>Ярополч</name>
+		<description>1130</description>
+	</Placemark>
+	<Placemark id="5F8ED00A061AD4DE87FA">
+		<name>Дубна</name>
+		<description>1134</description>
+	</Placemark>
+	<Placemark id="6AC1A5D69A1AD4DE87FA">
+		<name>Соль Великая</name>
+		<description>1214</description>
+	</Placemark>
+	<Placemark id="7DB51062A41AD4DE87FA">
+		<name>Унжа</name>
+		<description>1219</description>
+	</Placemark>
+	<Placemark id="89B2E715871AD4DE87FA">
+		<name>Кидекша</name>
+		<description>1152</description>
+	</Placemark>
+	<Placemark id="0957553CC61AD4DE87FB">
+		<name>Лопасня</name>
+		<description>1175</description>
+	</Placemark>
+	<Placemark id="17F52D4AB51AD4DE87FB">
+		<name>Кснятин</name>
+		<description>1134</description>
+	</Placemark>
+	<Placemark id="22A3587DD91AD4DE87FB">
+		<name>Плёсо</name>
+		<description>1141</description>
+	</Placemark>
+	<Placemark id="35AB1F988E1AD4DE87FB">
+		<name>Мстиславль</name>
+		<description>1135</description>
+	</Placemark>
+	<Placemark id="4CBC6538E51AD4DE87FB">
+		<name>?</name>
+	</Placemark>
+	<Placemark id="5C2156E9A01AD4DE87FB">
+		<name>Великий Новгород</name>
+		<description>859</description>
+	</Placemark>
+	<Placemark id="6FD30EDE861AD4DE87FB">
+		<name>Ладога</name>
+		<description>753</description>
+	</Placemark>
+	<Placemark id="70C3011FCE1AD4DE87FB">
+		<name>Изборск</name>
+		<description>862</description>
+	</Placemark>
+	<Placemark id="894C2F93331AD4DE87FB">
+		<name>Псков</name>
+		<description>903</description>
+	</Placemark>
+	<Placemark id="975A9A08BF1AD4DE87FB">
+		<name>Копорье</name>
+		<description>1237</description>
+	</Placemark>
+	<Placemark id="A2567469091AD4DE87FB">
+		<name>Холм</name>
+		<description>1144</description>
+	</Placemark>
+	<Placemark id="0324CA00F51AD4DE87FC">
+		<name>Луки</name>
+		<description>1166</description>
+	</Placemark>
+	<Placemark id="117A2543741AD4DE87FC">
+		<name>Олонец</name>
+		<description>1228</description>
+	</Placemark>
+	<Placemark id="266CCD0AE61AD4DE87FC">
+		<name>Руса</name>
+		<description>1167</description>
+	</Placemark>
+	<Placemark id="30568C65B51AD4DE87FC">
+		<name>Торжок</name>
+		<description>1139</description>
+	</Placemark>
+	<Placemark id="418770AF271AD4DE87FC">
+		<name>Бежич</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="5789BF09521AD4DE87FC">
+		<name>Вологда</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="63E54FA9571AD4DE87FC">
+		<name>Тошма</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="7EB19215CD1AD4DE87FC">
+		<name>Усть-Вага</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="017D21447D1AD4DE87FD">
+		<name>Волок Ламский</name>
+		<description>1135</description>
+	</Placemark>
+	<Placemark id="143BC31E201AD4DE87FD">
+		<name>Чудин</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="291F47E22C1AD4DE87FD">
+		<name>Хлынов</name>
+		<description>1174</description>
+	</Placemark>
+	<Placemark id="3A3B85E2491AD4DE87FD">
+		<name>Котельнич</name>
+		<description>1181</description>
+	</Placemark>
+	<Placemark id="43B3B683C31AD4DE87FD">
+		<name>Муром</name>
+		<description>862</description>
+	</Placemark>
+	<Placemark id="5A3D8CA5AB1AD4DE87FD">
+		<name>Городец Мещёрский</name>
+		<description>1152</description>
+	</Placemark>
+	<Placemark id="610E4228941AD4DE87FD">
+		<name>Курск</name>
+		<description>1032</description>
+	</Placemark>
+	<Placemark id="07AF9EC3691AD4DE87FE">
+		<name>Ольгов</name>
+		<description>1152</description>
+	</Placemark>
+	<Placemark id="139046F2671AD4DE87FE">
+		<name>Рыльск</name>
+		<description>1152</description>
+	</Placemark>
+	<Placemark id="2942A9873D1AD4DE87FE">
+		<name>Путивль</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="3D3DA26B2B1AD4DE87FE">
+		<name>Новгород-Северский</name>
+		<description>1079</description>
+	</Placemark>
+	<Placemark id="0949A9BE3C1AD4DE87FF">
+		<name>Глухов</name>
+		<description>1152</description>
+	</Placemark>
+	<Placemark id="11ACE7A0BE1AD4DE87FF">
+		<name>Углич</name>
+		<description>937</description>
+	</Placemark>
+	<Placemark id="05A545836B1AD4DE8800">
+		<name>Ростов</name>
+		<description>862</description>
+	</Placemark>
+	<Placemark id="16D1777A681AD4DE8800">
+		<name>Ярославль</name>
+		<description>1010</description>
+	</Placemark>
+	<Placemark id="0963FF4A3E1AD4DE8801">
+		<name>Молога</name>
+		<description>1149</description>
+	</Placemark>
+	<Placemark id="1DE3F408231AD4DE8801">
+		<name>Белоозеро</name>
+		<description>862</description>
+	</Placemark>
+	<Placemark id="2ACBBDAE881AD4DE8801">
+		<name>Усть-Шексна</name>
+		<description>1071</description>
+	</Placemark>
+	<Placemark id="3A0BB5FFFA1AD4DE8801">
+		<name>Устюг</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="4BE6244FB11AD4DE8801">
+		<name>Рязань</name>
+		<description>1096</description>
+	</Placemark>
+	<Placemark id="0E698E6B741AD4DE8803">
+		<name>Переяславль-Рязанский</name>
+		<description>1095</description>
+	</Placemark>
+	<Placemark id="17DD07024E1AD4DE8803">
+		<name>Коломна</name>
+		<description>1177</description>
+	</Placemark>
+	<Placemark id="286153AA7E1AD4DE8803">
+		<name>Ростиславль-Рязанский</name>
+		<description>1153</description>
+	</Placemark>
+	<Placemark id="373ED64A001AD4DE8803">
+		<name>Пронск</name>
+		<description>1131</description>
+	</Placemark>
+	<Placemark id="4481601A121AD4DE8803">
+		<name>Тула</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="513D3B86B71AD4DE8803">
+		<name>Елец</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="6BC06EB0861AD4DE8803">
+		<name>Ливны</name>
+		<description>1177</description>
+	</Placemark>
+	<Placemark id="7ED58F09201AD4DE8803">
+		<name>Зарайск</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="8327C21AF11AD4DE8803">
+		<name>Ижеславец</name>
+		<description>1237</description>
+	</Placemark>
+	<Placemark id="07B20E12071AD4DE8804">
+		<name>Дубок</name>
+	</Placemark>
+	<Placemark id="1A481C5F491AD4DE8804">
+		<name>Михайлов</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="2DD0545BBC1AD4DE8804">
+		<name>Глебов</name>
+		<description>1159</description>
+	</Placemark>
+	<Placemark id="33E0BAF4CD1AD4DE8804">
+		<name>Ольгов</name>
+	</Placemark>
+	<Placemark id="49DF83B3F51AD4DE8804">
+		<name>Новый Ольгов</name>
+	</Placemark>
+	<Placemark id="5B1484F95B1AD4DE8804">
+		<name>Белгород</name>
+		<description>1155</description>
+	</Placemark>
+	<Placemark id="695AE64B281AD4DE8804">
+		<name>Кадом</name>
+		<description>1209</description>
+	</Placemark>
+	<Placemark id="7697CFE5F81AD4DE8804">
+		<name>Донков</name>
+	</Placemark>
+	<Placemark id="83BC5407D21AD4DE8804">
+		<name>Борисов-Глебов</name>
+		<description>1180</description>
+	</Placemark>
+	<Placemark id="0093B019A01AD4DE8805">
+		<name>Андреев Городок</name>
+		<description>1171</description>
+	</Placemark>
+	<Placemark id="19A506822D1AD4DE8805">
+		<name>Воино</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="2A69D163BB1AD4DE8805">
+		<name>Смоленск</name>
+		<description>863</description>
+	</Placemark>
+	<Placemark id="3D3C7216B31AD4DE8805">
+		<name>Вязьма</name>
+		<description>1239</description>
+	</Placemark>
+	<Placemark id="497B4114DD1AD4DE8805">
+		<name>Дорогобуж</name>
+		<description>1150</description>
+	</Placemark>
+	<Placemark id="5CB1B18C991AD4DE8805">
+		<name>Елна</name>
+		<description>1150</description>
+	</Placemark>
+	<Placemark id="6CC96EF8BB1AD4DE8805">
+		<name>Ржева</name>
+		<description>1216</description>
+	</Placemark>
+	<Placemark id="0E9F11B67C1AD4DE8806">
+		<name>Красен</name>
+		<description>1165</description>
+	</Placemark>
+	<Placemark id="1CF27FC8521AD4DE8806">
+		<name>Кречут</name>
+		<description>1136</description>
+	</Placemark>
+	<Placemark id="2D2C5FB8991AD4DE8806">
+		<name>Можайск</name>
+		<description>1231</description>
+	</Placemark>
+	<Placemark id="379FBC99531AD4DE8806">
+		<name>Мстиславль</name>
+		<description>1135</description>
+	</Placemark>
+	<Placemark id="0402F867051AD4DE8807">
+		<name>Гнёздово</name>
+	</Placemark>
+	<Placemark id="18C607FD181AD4DE8807">
+		<name>Орша</name>
+		<description>1067</description>
+	</Placemark>
+	<Placemark id="28533D5A821AD4DE8807">
+		<name>Пропошеск</name>
+		<description>1136</description>
+	</Placemark>
+	<Placemark id="3CF375F43E1AD4DE8807">
+		<name>Ростиславль</name>
+		<description>1137</description>
+	</Placemark>
+	<Placemark id="45C0752DC31AD4DE8807">
+		<name>Name</name>
+		<description>description</description>
+	</Placemark>
+	<Placemark id="5090930A491AD4DE8807">
+		<name>Жижец</name>
+	</Placemark>
+	<Placemark id="6E2795D9431AD4DE8807">
+		<name>Торопец</name>
+		<description>1074</description>
+	</Placemark>
+	<Placemark id="7676CB1C011AD4DE8807">
+		<name>Name</name>
+		<description>description</description>
+	</Placemark>
+	<Placemark id="82120A5FBC1AD4DE8807">
+		<name>Козельск</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="97812437811AD4DE8807">
+		<name>Воротинеск</name>
+		<description>1155</description>
+	</Placemark>
+	<Placemark id="01651B5ADA1AD4DE8808">
+		<name>Белев</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="14626EB1831AD4DE8808">
+		<name>Масальск</name>
+		<description>1231</description>
+	</Placemark>
+	<Placemark id="210412546C1AD4DE8808">
+		<name>Мценеск</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="3779B28D131AD4DE8808">
+		<name>Новосиль</name>
+		<description>1155</description>
+	</Placemark>
+	<Placemark id="4C04A05EF41AD4DE8808">
+		<name>Корачев</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="539C05D6F81AD4DE8808">
+		<name>Кромы</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="665936D2F71AD4DE8808">
+		<name>Дебрянск</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="76FA5E031A1AD4DE8808">
+		<name>Трубецк</name>
+		<description>975</description>
+	</Placemark>
+	<Placemark id="830F3C95121AD4DE8808">
+		<name>Стародуб</name>
+		<description>1080</description>
+	</Placemark>
+	<Placemark id="0CEBA2BE981AD4DE8809">
+		<name>Севск</name>
+		<description>1146</description>
+	</Placemark>
+	<Placemark id="1B1C49376A1AD4DE8809">
+		<name>Чернигов</name>
+		<description>907</description>
+	</Placemark>
+	<Placemark id="2F0F42A5F61AD4DE8809">
+		<name>Сновск</name>
+		<description>1068</description>
+	</Placemark>
+	<Placemark id="3AEA3EE4FE1AD4DE8809">
+		<name>Любеч</name>
+		<description>882</description>
+	</Placemark>
+	<Placemark id="465E22C48D1AD4DE8809">
+		<name>Речица</name>
+		<description>1213</description>
+	</Placemark>
+	<Placemark id="57B03150491AD4DE8809">
+		<name>Гомий</name>
+		<description>1142</description>
+	</Placemark>
+	<Placemark id="6468B1C58F1AD4DE8809">
+		<name>Болхов</name>
+		<description>1196</description>
+	</Placemark>
+	<Placemark id="020F17377C1AD4DE880A">
+		<name>Домагощь</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="1FA0C453FF1AD4DE880A">
+		<name>Колпны</name>
+		<description>1150</description>
+	</Placemark>
+	<Placemark id="2FB4F4598A1AD4DE880A">
+		<name>Щиж</name>
+		<description>1142</description>
+	</Placemark>
+	<Placemark id="34CB1229DF1AD4DE880A">
+		<name>Серенск</name>
+		<description>1208</description>
+	</Placemark>
+	<Placemark id="49E4A98D0C1AD4DE880A">
+		<name>Тешилов</name>
+		<description>1147</description>
+	</Placemark>
+	<Placemark id="568C79F6561AD4DE880A">
+		<name>Колтеск</name>
+	</Placemark>
+  </Document>
+</kml>
+    
