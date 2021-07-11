@@ -4,56 +4,56 @@
     <description>Древнерусские города до монголов</description>
 	
 <Folder>
-
 <name>Суздальская земля</name>
 <description>Города Суздальской земли</description>
 
 	<Folder>
 	<name>Столица</name>
 	<description>Большой значок</description>
-	<Style id="style-Parking">
-        <IconStyle>
-        <scale>1</scale>
-        <Icon>
-        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-        </Icon>
-        </IconStyle>
-    </Style>
-		<Placemark>
+		<Style id="style-Capital">
+        	<IconStyle>
+        	<scale>1</scale>
+        	<Icon>
+        	<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        	</Icon>
+        	</IconStyle>
+    		</Style>
+		
+			<Placemark>
 			<name>Владимир</name>
-			<styleUrl>#style-Parking</styleUrl>
+			<styleUrl>#style-Capital</styleUrl>
 			<Point>
 			<coordinates>40.40709,56.12908,0</coordinates>
 			</Point>
-		</Placemark>
+			</Placemark>
 	</Folder>
 	
 	<Folder>
 	<name>Обычные города</name>
 	<description>Средний значок</description>
-	<Style id="style-Fuel">
-        <IconStyle>
-        <scale>0.5</scale>
-        <Icon>
-        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-        </Icon>
-        </IconStyle>
-    </Style>
-		<Placemark>
-		<name>Москва</name>
-		<styleUrl>#style-Fuel</styleUrl>
-		<Point>
-		<coordinates>37.61747,55.75064,0</coordinates>
-		</Point>
-		</Placemark>
+		<Style id="style-Town">
+        	<IconStyle>
+        	<scale>0.5</scale>
+        	<Icon>
+        	<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        	</Icon>
+        	</IconStyle>
+    		</Style>
+			<Placemark>
+			<name>Москва</name>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>37.61747,55.75064,0</coordinates>
+			</Point>
+			</Placemark>
 		
-		<Placemark>
-		<name>Суздаль</name>
-		<styleUrl>#style-Fuel</styleUrl>
-		<Point>
-		<coordinates>40.44372,56.41628,0</coordinates>
-		</Point>
-		</Placemark>
+			<Placemark>
+			<name>Суздаль</name>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.44372,56.41628,0</coordinates>
+			</Point>
+			</Placemark>
 	</Folder>
 
 </Folder>	
