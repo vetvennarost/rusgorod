@@ -1,0 +1,62 @@
+<kml>
+  <Document>
+    <name>1237f</name>
+    <description>Древнерусские города до монголов</description>
+	
+<Folder>
+
+<name>Суздальская земля</name>
+<description>Города Суздальской земли</description>
+
+	<Folder>
+	<name>Столица</name>
+	<description>Большой значок</description>
+	<Style id="style-Parking">
+        <IconStyle>
+        <scale>0.2</scale>
+        <Icon>
+        <href>https://maps.google.com/mapfiles/kml/shapes/parking_lot.png</href>
+        </Icon>
+        </IconStyle>
+    </Style>
+		<Placemark>
+			<name>Владимир</name>
+			<styleUrl>#style-Parking</styleUrl>
+			<Point>
+			<coordinates>40.40709,56.12908,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	
+	<Folder>
+	<name>Обычные города</name>
+	<description>Средний значок</description>
+	<Style id="style-Fuel">
+        <IconStyle>
+        <scale>0.7</scale>
+        <Icon>
+        <href>https://maps.google.com/mapfiles/kml/pal2/icon21.png</href>
+        </Icon>
+        </IconStyle>
+    </Style>
+		<Placemark>
+		<name>Москва</name>
+		<styleUrl>#style-Fuel</styleUrl>
+		<Point>
+		<coordinates>37.61747,55.75064,0</coordinates>
+		</Point>
+		</Placemark>
+		
+		<Placemark>
+		<name>Суздаль</name>
+		<styleUrl>#style-Fuel</styleUrl>
+		<Point>
+		<coordinates>40.44372,56.41628,0</coordinates>
+		</Point>
+		</Placemark>
+	</Folder>
+
+</Folder>	
+	
+</Document>
+</kml>
