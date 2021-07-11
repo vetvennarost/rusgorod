@@ -41,7 +41,7 @@
     		</Style>
 		
 		
-			<Placemark>
+			<Placemark id="">
 			<name>Москва</name>
 			<styleUrl>#style-Town</styleUrl>
 			<Point>
@@ -75,16 +75,16 @@
 			</Point>
 			</Placemark>
 	
-			<Placemark id="015F3721961AD4DE87F8">
+			<Placemark>
 			<name>Нижний Новгород</name>
 			<description>1221 Новагородъ Низовския земли</description>
 			<styleUrl>#style-Town</styleUrl>
 			<Point>
-			<coordinates>44.00136,56.32849999999999,0</coordinates>
+			<coordinates>44.00136,56.32850,0</coordinates>
 			</Point>
 			</Placemark>
 		
-			<Placemark id="1B911C2BFA1AD4DE87F8">
+			<Placemark>
 			<name>Городец</name>
 			<description>1171 Городець</description>
 			<styleUrl>#style-Town</styleUrl>
@@ -93,12 +93,165 @@
 			</Point>
 			</Placemark>
 	
-			<Placemark id="2B801CC9A91AD4DE87F8">
+			<Placemark>
 			<name>Гороховец</name>
 			<description>1239 Гороховець</description>
 			<styleUrl>#style-Town</styleUrl>
 			<Point>
 			<coordinates>42.67375,56.20425,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Юрьев-Польский</name>
+			<description>1177 Юрьевъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>39.68051,56.49736,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Кострома</name>
+			<description>1213 Кострома</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.91817,57.77008,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Дмитров</name>
+			<description>1154 Дмитровъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>37.52008,56.34463,0</coordinates>
+			</Point>
+			</Placemark>
+	
+			<Placemark>
+			<name>Стародуб</name>
+			<description>1218 Стародубъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>41.50196,56.44899,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Кашин</name>
+			<description>1238</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>37.61408,57.36079,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Переяславль</name>
+			<description>1152 Переаславль</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>38.85171,56.73584,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Зубцов</name>
+			<description>1216 Зубьчевъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>34.58953,56.17093,0</coordinates>
+			</Point>
+			</Placemark>
+	
+			<Placemark>
+			<name>Звенигород</name>
+			<description>1339 Звенигородъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>36.84012,55.73291,0</coordinates>
+			</Point>
+			</Placemark>
+	
+			<Placemark>
+			<name>Боголюбово</name>
+			<description>1158 Боголюбый</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.53686,56.19615,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Юрьевец</name>
+			<description>1225 Юрьевъ Поволгский</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>43.10521,57.31568,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Нерехта</name>
+			<description>1214 Нѣрохъть</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.57135,57.46125,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Ярополч</name>
+			<description>1108 Ярополчь</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>42.24437,56.23556,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Дубна</name>
+			<description>1134 Дубна</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>37.23920,56.78268,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Соль Великая</name>
+			<description>1214 Соль-Великая</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.35905,57.67822,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Унжа</name>
+			<description>1219 -</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>44.01751,58.01555,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Кидекша</name>
+			<description>1152 -</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>40.52691,56.42484,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark>
+			<name>Кснятин</name>
+			<description>1134 Константинъ</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>37.68244,57.10895,0</coordinates>
 			</Point>
 			</Placemark>
 		
