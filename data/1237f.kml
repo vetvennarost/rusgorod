@@ -12,7 +12,7 @@
 	<description>Большой значок</description>
 		<Style id="style-Capital">
         	<IconStyle>
-        	<scale>1</scale>
+        	<scale>0.8</scale>
         	<Icon>
         	<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
         	</Icon>
@@ -65,8 +65,43 @@
 			<coordinates>42.36009,58.38845,0</coordinates>
 			</Point>
 			</Placemark>
+		
+			<Placemark>
+			<name>Тверь</name>
+			<description>1135 Тьхвѣрь</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>35.90034,56.86158,0</coordinates>
+			</Point>
+			</Placemark>
 	
+			<Placemark id="015F3721961AD4DE87F8">
+			<name>Нижний Новгород</name>
+			<description>1221 Новагородъ Низовския земли</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>44.00136,56.32849999999999,0</coordinates>
+			</Point>
+			</Placemark>
+		
+			<Placemark id="1B911C2BFA1AD4DE87F8">
+			<name>Городец</name>
+			<description>1171 Городець</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>43.46572,56.63998,0</coordinates>
+			</Point>
+			</Placemark>
 	
+			<Placemark id="2B801CC9A91AD4DE87F8">
+			<name>Гороховец</name>
+			<description>1239 Гороховець</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>42.67375,56.20425,0</coordinates>
+			</Point>
+			</Placemark>
+		
 	</Folder>
 
 </Folder>	
