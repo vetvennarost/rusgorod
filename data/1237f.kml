@@ -39,6 +39,8 @@
         	</Icon>
         	</IconStyle>
     		</Style>
+		
+		
 			<Placemark>
 			<name>Москва</name>
 			<styleUrl>#style-Town</styleUrl>
@@ -54,6 +56,17 @@
 			<coordinates>40.44372,56.41628,0</coordinates>
 			</Point>
 			</Placemark>
+		
+			<Placemark>
+			<name>Галич</name>
+			<description>1237 Галичь</description>
+			<styleUrl>#style-Town</styleUrl>
+			<Point>
+			<coordinates>42.36009,58.38845,0</coordinates>
+			</Point>
+			</Placemark>
+	
+	
 	</Folder>
 
 </Folder>	
