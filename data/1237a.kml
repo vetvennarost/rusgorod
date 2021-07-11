@@ -112,8 +112,8 @@
         <description>Attached to the ground. Intelligently places itself at the
           height of the underlying terrain.</description>
 		<Icon>
- <href>http://developers.google.com/kml/documentation/images/etna.jpg</href>
- </Icon>
+			<href>http://maps.google.com/mapfiles/kml/paddle/red-stars.png</href>
+		</Icon>
         <Point>
           <coordinates>40.41,56.2</coordinates>
         </Point>
