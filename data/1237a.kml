@@ -106,6 +106,16 @@
 			<coordinates>40.40709,56.12908,0</coordinates>
 		</Point>
 	</Placemark>
+	
+	<Placemark>
+        <name>Simple placemark</name>
+        <description>Attached to the ground. Intelligently places itself at the
+          height of the underlying terrain.</description>
+        <Point>
+          <coordinates>40.41,56.2</coordinates>
+        </Point>
+      </Placemark>
+	
 	<Placemark id="12F1AE060A1AD4DE87F5">
 		<name>Москва</name>
 		<description>1147 Московь</description>
