@@ -13,9 +13,9 @@
 	<description>Большой значок</description>
 	<Style id="style-Parking">
         <IconStyle>
-        <scale>0.2</scale>
+        <scale>1</scale>
         <Icon>
-        <href>https://maps.google.com/mapfiles/kml/shapes/parking_lot.png</href>
+        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
         </Icon>
         </IconStyle>
     </Style>
@@ -33,9 +33,9 @@
 	<description>Средний значок</description>
 	<Style id="style-Fuel">
         <IconStyle>
-        <scale>0.7</scale>
+        <scale>0.5</scale>
         <Icon>
-        <href>https://maps.google.com/mapfiles/kml/pal2/icon21.png</href>
+        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
         </Icon>
         </IconStyle>
     </Style>
